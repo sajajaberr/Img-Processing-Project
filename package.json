@@ -1,0 +1,39 @@
+{
+  "name": "project1-root",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "npx tsc",
+    "serve": "node build/index.js",
+    "start": "ts-node-dev src/index.ts",
+    "test": "jasmine --require=ts-node/register --config=spec/support/jasmine.json",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/jasmine": "^5.1.9",
+    "@types/node": "^24.3.1",
+    "@types/supertest": "^6.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "jasmine": "^5.10.0",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}
