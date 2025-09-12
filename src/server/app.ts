@@ -7,5 +7,7 @@ app.use(express.json());
 app.use("/api/images", imagesRouter);
 app.use("/api/placeholder", placeholderRouter);
 
-app.get("/", (_req, res) => res.send("Image Processing API is running"));
+app.get("/", (_req: express.Request, res: express.Response) =>
+  res.send("Image Processing API is running")
+);
 export default app;

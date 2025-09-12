@@ -3,7 +3,7 @@ import sharp from "sharp";
 
 const router = express.Router();
 
-router.get("/", async (req, res) => {
+router.get("/", async (req: express.Request, res: express.Response) => {
   const width = parseInt(String(req.query.width || "300"), 10);
   const height = parseInt(String(req.query.height || "200"), 10);
   const text = String(req.query.text || `${width}x${height}`);

@@ -15,6 +15,7 @@ export async function resizeImage(
   height: number
 ): Promise<string> {
   try {
+    await ensureThumbDir();
     const inputPath = path.join(fullDir, `${filename}.jpg`);
     const outputPath = path.join(
       thumbDir,
