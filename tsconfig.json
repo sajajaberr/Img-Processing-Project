@@ -10,6 +10,10 @@
     "skipLibCheck": true,
     "sourceMap": true
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "src/tests/imagesSpec.ts",
+    "src/tests/imageProcessingSpec.ts"
+  ],
   "exclude": ["node_modules", "build", "spec"]
 }

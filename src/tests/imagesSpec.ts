@@ -1,5 +1,5 @@
 import request from "supertest";
-import app from "../src/server/app";
+import app from "../server/app";
 
 describe("GET /api/images", () => {
   it("returns 400 when params missing", async () => {
